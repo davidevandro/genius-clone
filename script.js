@@ -23,3 +23,15 @@ let shuffleOrder = () => {
 
     }
 }
+
+let lightColor = (element, number) => {
+    number = number * 500;
+    //executa o código depois de tempo
+    setTimeout(() => {
+        element.classList.add('selected');
+    }, number - 250);
+    setTimeout(() => {
+        element.classList.remove('selected');
+    });   
+}
+
