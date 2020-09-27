@@ -34,7 +34,8 @@ let lightColor = (element, number) => {
     }, number - 250);
     setTimeout(() => {
         element.classList.remove('selected');
-    });   
+        //element.classList.add('unselected');
+    },number);   
 }
 
 //checa se os botoes clicados sao os mesmos da order gerada no jogo
@@ -45,7 +46,7 @@ let checkOrder = () => {
             break;
         }
     }
-    if(clickedOrder.lenght == order.length){
+    if(clickedOrder.length == order.length){
         alert(`Pontuação: ${score}\nVocê acertou! Inicando próximo nível!`);
         nextLevel();
     }
@@ -59,7 +60,7 @@ let click = (color) => {
     setTimeout(()=>{
         createColorElement(color).classList.remove('selected');
         checkOrder();
-    })
+    },250);
 
 }
 
@@ -89,6 +90,11 @@ let gameover = () => {
     order = [];
     clickedOrder = [];
 
+    blue.classList.remove('selected');
+    yellow.classList.remove('selected');
+    green.classList.remove('selected');
+    red.classList.remove('selected');
+
     playGame();
 }
 
@@ -96,13 +102,13 @@ let gameover = () => {
 let playGame = () => {
     alert('Bem vindo ao Genius-Clone! Iniciando novo jogo!');
     score = 0;
-
     nextLevel();
 }
 
-green.addEventListener('click', click(0));
-red.addEventListener('click', click(1));
-blue.addEventListener('click', click(2));
-yellow.addEventListener('click', click(3));
+//eventos de click do jogo
+green.onclick = () => click(0);
+red.onclick = () => click(1);
+blue.onclick = () => click(3);
+yellow.onclick = () => click(2);
 
 playGame();
