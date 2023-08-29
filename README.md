@@ -38,9 +38,9 @@ $ cd genius-clone
 This project was inspired by the original Genius game distributed by Brinquedos Estrela in the 1980s. 
 
 ## License
-This project is under the (MIT license)[https://github.com/davidevandro/genius-clone/blob/master/LICENSE].
+This project is under the [MIT license](https://github.com/davidevandro/genius-clone/blob/master/LICENSE).
 
 <div align="center">
 
-Developed by David Martins - November/2022
+Developed by David Martins - September/2020
 
