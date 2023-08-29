@@ -5,7 +5,6 @@
 - [Features](#features)
 - [Technologies](#technologies)
 - [How to Use](#how-to-use)
-- [Acknowledgements](#acknowledgements)
 - [License](#license)
 
 ## Description
@@ -34,13 +33,14 @@ $ cd genius-clone
 # Open index.html in your browser
 ```
 
-## Acknowledgements
-This project was inspired by the original Genius game distributed by Brinquedos Estrela in the 1980s. 
-
 ## License
 This project is under the [MIT license](https://github.com/davidevandro/genius-clone/blob/master/LICENSE).
 
 <div align="center">
 
 Developed by David Martins - September/2020
+
+[<img src="https://img.shields.io/static/v1?label= &message=David Evandro Amorim Martins&color=blue&logo=linkedin&link=https://www.linkedin.com/in/david-evandro-martins/"/>](https://www.linkedin.com/in/david-evandro-martins/)
+
+</div>
 
